@@ -18,12 +18,15 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rack-cors'
 
+group :test do
+  gem 'factory_bot_rails', '~> 4.0'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'faker'
+  gem 'database_cleaner'
+end
+
 group :development, :test do
   gem 'rspec-rails'
-  gem 'shoulda-matchers'
-  gem 'factory_bot_rails'
-  gem 'pry-rails'
-  gem 'faker'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
