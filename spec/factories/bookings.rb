@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :booking do
     paid { false }
-    owes { nil }
+    cost { nil }
     trip { nil }
     guest { nil }
   end

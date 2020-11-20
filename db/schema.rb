@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_11_19_062919) do
   enable_extension "plpgsql"
 
   create_table "bookings", force: :cascade do |t|
-    t.money "owes", scale: 2
+    t.money "cost", scale: 2
     t.boolean "paid", default: false
     t.integer "nights", default: [], array: true
     t.bigint "trip_id", null: false
